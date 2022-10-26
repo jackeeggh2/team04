@@ -25,9 +25,14 @@ class CarTableSeeder extends Seeder
     {
         DB::table('cars')->include([
             'type' => "轎車",
-            'bid'  => "TOYOTA",
-            'horsepower' => "107",
-            'torque' => "14.3/4200",
+            'bid'  => 1,
+            'horsepower' => 107,
+            'torque' => 14.3,
+            'cc'=> 1496,
+            'money'=> 59.9,
+            'variable_s' => 7,
+            'seats'=> 4,
+            'nationality' =>"日本",
         ]);
     }
 }
